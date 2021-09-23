@@ -1,0 +1,167 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: #fff;
+  font-family: Arial;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 30px auto;
+}
+/*header*/
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#datetime {
+  font-weight: 700;
+}
+/*main*/
+.container {
+  margin: 20px;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.currencyBox {
+  background-color: rgb(241, 241, 241);
+  border: 2px solid black;
+  height: 180px;
+  margin: 20px;
+  padding: 5px;
+  width: 400px;
+}
+.closeButton {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 94%;
+  position: relative;
+  text-align: end;
+}
+.flagAndInput,
+.rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rates {
+  flex-direction: column;
+}
+.rates p {
+  margin: 0;
+}
+.flagAndInput img {
+  height: 45px;
+  margin: 10px;
+  width: 80px;
+}
+.currencyIcon {
+  font-size: 2.5rem;
+  margin: 0;
+}
+#amount {
+  height: 30px;
+  margin: 10px;
+  width: 330px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addCurrency {
+  background-color: rgb(34, 196, 34);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 5rem;
+  font-weight: bold;
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+  width: 500px;
+}
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.modal-content {
+  animation-duration: 1s;
+  animation-name: modalopen;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgb(0, 0, 0.17);
+  margin: 5% auto;
+  max-height: 60%;
+  overflow-x: hidden;
+  overflow: auto;
+  width: 60%;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modalCurrencyBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(228, 222, 222);
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 3rem;
+  width: 100%;
+}
+.selected {
+  background-color: grey;
+}
+.modalCurrencyBox img {
+  height: auto;
+  margin: 20px;
+  width: 80px;
+}
+.modalbtn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+}
+.addCurrencyModal {
+  background-color: rgb(221, 47, 4);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 5rem;
+  font-weight: bold;
+  height: auto;
+  padding: 20px;
+  width: 500px;
+}
